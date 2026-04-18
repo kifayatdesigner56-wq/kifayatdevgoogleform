@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background: linear-gradient(120deg,#1d2671,#c33764,#00c9ff);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:rgba(255,255,255,0.15);
+    padding:30px;
+    width:90%;
+    max-width:500px;
+    border-radius:15px;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#ff2e63;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff477e;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<h1>Registration Form</h1>
+
+<form onsubmit="return submitForm()">
+
+<input type="text" placeholder="Name" required>
+<input type="text" placeholder="Father Name" required>
+<input type="tel" placeholder="Contact" required>
+<input type="email" placeholder="Email" required>
+<input type="number" placeholder="Age" required>
+
+<select required>
+<option value="">Select Blood Type</option>
+<option>A+</option>
+<option>B+</option>
+<option>O+</option>
+<option>AB+</option>
+<option>A-</option>
+<option>B-</option>
+<option>O-</option>
+<option>AB-</option>
+</select>
+
+<button type="submit">Submit</button>
+
+</form>
+</div>
+
+<script>
+function submitForm(){
+    alert("Form Submitted Successfully!");
+    return false;
+}
+</script>
+
+</body>
+</html>
